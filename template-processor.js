@@ -6,7 +6,7 @@ function TemplateProcessor(template){
 // Create the fillin method
 TemplateProcessor.prototype.fillin = function (dictionary){
   // Match string in form {{property}}
-  var property = /{{()}}/;
+  var property = /{{(.*?)}}/;
 // Preforming a replacement option on this.template string if it does not follow the form {{property}} template.
   var templeteFill = this.template.replace(property, function (match, property) {
 
