@@ -8,7 +8,7 @@ TemplateProcessor.prototype.fillIn = function (dictionary){
   // Match string in form {{property}}
   var property = /{{(.*?)}}/g;
 // Preforming a replacement option on this.template string if it does not follow the form {{property}} template.
-  var templeteFill = this.template.replace(property, function (match, property) {
+  var templateFill = this.template.replace(property, function (match, property) {
 
 // Check if dictionary object exist, if not, replace with empty string
   if (dictionary.hasOwnProperty(property)) {
