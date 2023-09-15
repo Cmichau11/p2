@@ -1,10 +1,10 @@
-// New Templete Processer Class
-function TempleteProcessor(template){
+// New Template Processer Class
+function TemplateProcessor(template){
   this.template = template;
 }
 
 // Create the fillin method
-TempleteProcessor.fillin = function (dictionary){
+TempleteProcessor.prototype.fillin = function (dictionary){
   // Match string in form {{property}}
   var property = /{{()}}/;
 
