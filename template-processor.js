@@ -1,4 +1,4 @@
-// New Template Processer Class
+// New Template Processor Class
 function TemplateProcessor(template){
   this.template = template;
 }
@@ -13,10 +13,10 @@ TemplateProcessor.prototype.fillin = function (dictionary){
 // Check if dictionary object, if not, replace with empty string
   if (dictionary.hasOwnProperty(property)) {
   return dictionary[property];
-  } else {
-    return '';
-  }
-}
-);
-return templeteFill;
+    } else {
+      return '';
+    }
+  });
+  
+  return templeteFill;
 }
