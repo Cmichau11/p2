@@ -10,7 +10,7 @@ TemplateProcessor.prototype.fillin = function (dictionary){
 // Preforming a replacement option on this.template string if it does not follow the form {{property}} template.
   var templeteFill = this.template.replace(property, function (match, property) {
 
-// Check if dictionary object, if not, replace with empty string
+// Check if dictionary object exist, if not, replace with empty string
   if (dictionary.hasOwnProperty(property)) {
   return dictionary[property];
     } else {
