@@ -18,5 +18,5 @@ TemplateProcessor.prototype.fillIn = function (dictionary){
     }
   });
   // Returns the replaced dictionary word with form {{property}}
-  return templeteFill;
+  return fillIn;
 }
