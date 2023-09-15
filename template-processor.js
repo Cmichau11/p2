@@ -8,7 +8,7 @@ TemplateProcessor.prototype.fillin = function (dictionary){
   // Match string in form {{property}}
   var property = /{{()}}/;
 
-  var templeteFill = this.template.replace(property), function (match, property) {
+  var templeteFill = this.template.replace(property, function (match, property) {
 
 // Check if dictionary object, if not, replace with empty string
   if (dictionary.hasOwnProperty(property)) {
@@ -16,6 +16,7 @@ TemplateProcessor.prototype.fillin = function (dictionary){
   } else {
     return '';
   }
-  return templeteFill;
 }
-  
+);
+return templeteFill;
+}
