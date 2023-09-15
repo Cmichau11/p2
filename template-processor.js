@@ -7,7 +7,7 @@ function TemplateProcessor(template){
 TemplateProcessor.prototype.fillin = function (dictionary){
   // Match string in form {{property}}
   var property = /{{()}}/;
-
+// Preforming a replacement option on this.template string if it does not follow the form {{property}} template.
   var templeteFill = this.template.replace(property, function (match, property) {
 
 // Check if dictionary object, if not, replace with empty string
@@ -17,6 +17,6 @@ TemplateProcessor.prototype.fillin = function (dictionary){
       return '';
     }
   });
-  
+  // Returns the replaced dictionary word with form {{property}}
   return templeteFill;
 }
