@@ -4,7 +4,7 @@ function TemplateProcessor(template){
 }
 
 // Create the fillin method
-TempleteProcessor.prototype.fillin = function (dictionary){
+TemplateProcessor.prototype.fillin = function (dictionary){
   // Match string in form {{property}}
   var property = /{{()}}/;
 
